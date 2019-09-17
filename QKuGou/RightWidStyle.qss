@@ -1,0 +1,111 @@
+
+/***QTbaleBar***/
+QTabWidget::pane
+{
+        border: none;
+        background:transparent;
+}
+QTabWidget::tab-bar
+{
+   /*  border-radius:5px;*/
+      subcontrol-position:left;
+}
+
+QTabBar::tab
+{
+   /* background:transparent;*/
+
+}
+
+QTabBar::tab:selected
+{
+    color: rgb(36,197,219);
+/*    background:transparent;*/
+}
+
+QTabBar::tab:!selected
+{
+    color: black;
+/*    background:transparent;*/
+}
+QTabBar::tab:hover
+{
+   /* color: rgb(36,197,219); */
+/*    background:transparent;*/
+}
+
+
+/***listwidge 设置****/
+
+QListWidget{
+    border: none;
+    background: transparent;
+}
+
+QListWidget::item{
+     border: 0px solid #33CCFF;
+     padding:0px;
+     margin:0px;
+}
+QListWidget::item:hover {
+     /*border: 0px solid #33CCFF;*/
+     border:none;
+     background: transparent;
+     padding:0px;
+     margin:0px;
+}
+QListWidget::item:selected {
+     /*border: 0px solid #33CCFF;*/
+     border:none;
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #6A848C,  stop: 1.0 #0F9EAF);
+     padding:0px;
+     margin:0px;
+}
+
+
+QScrollBar{
+    background:transparent;
+    width: 1px;
+    border-radius:5px;
+}
+
+QScrollBar::handle{
+   background:rgba(0,0,0,25%);
+    border:1px solid transparent;
+    border-radius:6px;
+}
+
+QScrollBar::handle:hover
+{
+   background:rgba(0,0,0,50%);
+}
+
+QScrollBar::sub-line{
+    background:transparent;
+    border:none;
+}
+
+QScrollBar::add-line{
+    background:transparent;
+    border:none;
+}
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical
+{
+    background:rgba(0,0,0,10%);
+    border-radius:4px;
+}
+
+QLabel
+{
+  border:none;
+  color:white;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlayModeForm</class>
+ <widget class="QFrame" name="PlayModeForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>114</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border:none</string>
+  </property>
+  <widget class="QListWidget" name="lstWid_playMode">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>71</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border:none</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>单曲播放</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>单曲循环</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>顺序播放</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>列表循环</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>随机播放</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

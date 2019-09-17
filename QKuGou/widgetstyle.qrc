@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>RightWidStyle.qss</file>
+        <file>BottomWidStyle.qss</file>
+        <file>CentralWidStyle.qss</file>
+        <file>DownloadWidStyle.qss</file>
+        <file>TopWidStyle.qss</file>
+        <file>ScrollBar.qss</file>
+    </qresource>
+</RCC>

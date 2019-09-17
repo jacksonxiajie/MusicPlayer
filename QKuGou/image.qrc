@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/Background.jpg</file>
+        <file>Images/icon.jpg</file>
+        <file>Images/Logo.ico</file>
+        <file>Images/Pause.jpg</file>
+        <file>Images/Play.jpg</file>
+        <file>Images/search.png</file>
+        <file>Images/arrow_down.png</file>
+        <file>Images/arrow_right.png</file>
+        <file>background/blue.jpg</file>
+        <file>background/flowStars.jpg</file>
+        <file>background/plane.jpg</file>
+        <file>background/sky.jpg</file>
+        <file>background/yellow.jpg</file>
+        <file>bottomImage/loop.png</file>
+        <file>bottomImage/muteVoice.png</file>
+        <file>bottomImage/next.png</file>
+        <file>bottomImage/orderLoop.png</file>
+        <file>bottomImage/pause.png</file>
+        <file>bottomImage/play.png</file>
+        <file>bottomImage/playlistBtn.png</file>
+        <file>bottomImage/pre.png</file>
+        <file>bottomImage/randomPlay.png</file>
+        <file>bottomImage/voice.png</file>
+        <file>rightImage/add.png</file>
+        <file>rightImage/disklike.png</file>
+        <file>rightImage/Ilike.png</file>
+        <file>rightImage/music.png</file>
+        <file>topImage/min.png</file>
+        <file>topImage/quit.png</file>
+        <file>topImage/sereach.png</file>
+        <file>bottomImage/download.png</file>
+        <file>bottomImage/listLoop.png</file>
+        <file>bottomImage/singleLoop.png</file>
+        <file>rightImage/del.png</file>
+        <file>bottomImage/bg.jpg</file>
+        <file>bottomImage/bottomBg.png</file>
+        <file>bottomImage/down.png</file>
+        <file>bottomImage/lyric.png</file>
+        <file>background/music.ico</file>
+        <file>background/centralFrame.png</file>
+        <file>rightImage/scan .png</file>
+    </qresource>
+</RCC>

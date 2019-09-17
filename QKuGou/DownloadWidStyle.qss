@@ -1,0 +1,117 @@
+QRadioButton::indicator {
+/*    width: 13px;
+    height: 13px;*/
+}
+QRadioButton::indicator::unchecked {
+    /* image: url(:/images/radiobutton_unchecked.png); */
+    background-color: rgb(255,0,0,60);
+}
+QRadioButton::indicator:unchecked:hover {
+    /* image: url(:/images/radiobutton_unchecked_hover.png); */
+    background-color: rgb(255,0,0,120);
+}
+QRadioButton::indicator:unchecked:pressed {
+    /* image: url(:/images/radiobutton_unchecked_pressed.png); */
+    background-color: rgb(255,0,0,180);
+}
+QRadioButton::indicator::checked {
+    /* image: url(:/images/radiobutton_checked.png); */
+    background-color: rgb(0,255,0,60);
+}
+QRadioButton::indicator:checked:hover {
+    /* image: url(:/images/radiobutton_checked_hover.png); */
+    background-color: rgb(0,255,0,120);
+}
+QRadioButton::indicator:checked:pressed {
+    /* image: url(:/images/radiobutton_checked_pressed.png); */
+    background-color: rgb(0,255,0,180);
+}
+
+
+/**QToolTip***/
+ QToolTip{
+    border: 2px solid green; /* border: 宽度 线类型 颜色 */
+    border-radius: 4px;
+    padding: 2px; /* 边界都内部矩形的宽度 */
+background-image: url(E:/1.jpg);
+}
+
+
+/****QToolButton: 开始下载****/
+QToolButton {
+    border: 2px solid #8f8f91;
+    border-radius: 6px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #f6f7fa,
+                                  stop: 1 #dadbde);
+    min-width: 80px;
+}
+QToolButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #dadbde,
+                                  stop: 1 #f6f7fa);
+}
+QToolButton:flat {
+    border: none; /* no border for a flat push button */
+}
+QToolButton:default {
+    border-color: navy; /* make the default button prominent */
+}
+
+QToolButton#pushButton_shutdown {
+    background-color: rgb(0, 255, 0, 100); // rgb可使用rgba
+}
+QToolButton#pushButton_shutdown:hover {
+    background-color: rgb(0, 255, 0); // rgb可使用rgb，默认a为255
+}
+QToolButton#pushButton_shutdown:pressed {
+    background-color: red; // 可使用预知的关键字
+}
+
+
+/***QCombox: 路径选择****/
+QComboBox {
+    border: 1px solid gray; /* border: 宽度 线类型 颜色 */
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+QComboBox:editable {
+    background: white;
+}
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                             stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                             stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+/* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                             stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                             stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-style: solid; /* just a single line */
+    border-left-color: darkgray;
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow {
+    /* image: url(E:/1.jpg);*/
+    border-image: url(E:/1.jpg);
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+
+

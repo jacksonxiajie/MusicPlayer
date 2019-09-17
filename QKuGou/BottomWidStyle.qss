@@ -1,0 +1,143 @@
+
+
+
+
+/**QMenue 托盘菜单使用***/
+QMenu {
+    background-color: white;
+    margin: 2px; /* some spacing around the menu */
+}
+QMenu::item {
+    padding: 2px 25px 2px 20px;
+    border: 1px solid transparent; /* reserve space for selection border */
+}
+QMenu::item:selected {
+    border-color: darkblue;
+    background: rgba(100, 100, 100, 150);
+}
+QMenu::icon:checked { /* appearance of a 'checked' icon */
+    background: gray;
+    border: 1px inset gray;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+}
+QMenu::separator {
+    height: 2px;
+    background: lightblue;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+QMenu::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+/* non-exclusive indicator = check box style indicator (see QActionGroup::setExclusive) */
+QMenu::indicator:non-exclusive:unchecked {
+    background-color: rgb(255,0,0,100);
+}
+QMenu::indicator:non-exclusive:unchecked:selected {
+    background-color: rgb(255,0,0,180);
+}
+QMenu::indicator:non-exclusive:checked {
+    background-color: rgb(255,0,0,255);
+}
+QMenu::indicator:non-exclusive:checked:selected {
+    background-color: rgb(0,0,0, 100);
+}
+/* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
+QMenu::indicator:exclusive:unchecked {
+    background-color: rgb(0,255,0, 100);
+}
+QMenu::indicator:exclusive:unchecked:selected {
+    background-color: rgb(0,255,0,180);
+}
+QMenu::indicator:exclusive:checked {
+    background-color: rgb(0,255,0, 255);
+}
+QMenu::indicator:exclusive:checked:selected {
+    background-color: rgb(0,0,0, 100);
+}
+
+
+/***设置底部的主背景***/
+QFrame#frame_bottom{
+border:none;
+background-image: url(:/bottomImage/bg.jpg);
+}
+
+
+QToolButton  #btn_play,#toolBtn_preSong,#toolBtn_nextSong,#lbl_audioName,#tBtn_volumn,#tBtn_cyclePlay,#tBtn_desktopIrics,#tBtn_download
+{
+  border: none;
+}
+
+
+/****进度滑块*****/
+QSlider::groove:horizontal {
+border: 1px solid #4A708B;
+background: #C0C0C0;
+height: 5px;
+border-radius: 1px;
+padding-left:-1px;
+padding-right:-1px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #B1B1B1, stop:1 #c4c4c4);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #5DCCFF, stop: 1 #1874CD);
+border: 1px solid #4A708B;
+height: 10px;
+border-radius: 2px;
+}
+
+QSlider::add-page:horizontal {
+background: #575757;
+border: 0px solid #777;
+height: 10px;
+border-radius: 2px;
+}
+
+QSlider::handle:horizontal
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA,
+    stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #00009C;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}
+
+

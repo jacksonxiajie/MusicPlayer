@@ -1,0 +1,32 @@
+QStackedWidget
+{
+    border:none;
+}
+
+QFrame #frame
+{
+  border:none;
+  background-image: url(:/background/centralFrame.png);
+}
+
+QPushButton,QToolButton
+{
+    border-radius: 6px;
+    color:white;
+    background-color: rgb(85, 170, 255);
+    font: 12pt "微软雅黑";
+}
+QPushButton:hover,QToolButton:hover
+{
+   background-color: rgb(85, 85, 255);
+}
+
+QLabel
+{
+    border:none;
+    font: 12pt "微软雅黑";
+    color: rgb(255, 255, 255);
+    background-color:transparent;
+}
+
+

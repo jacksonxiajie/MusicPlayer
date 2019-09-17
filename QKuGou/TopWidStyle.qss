@@ -1,0 +1,42 @@
+/***设置主窗口的背景用centralWidget 而不是mainWindow****/
+QWidget#centralWidget{
+background-image: url(:/background/blue.jpg);
+}
+
+
+/**  顶部控件的设置**/
+QFrame#frame_topWidget{
+    border: none;
+}
+
+QLineEdit#lineEdit_search{
+        border:none;
+        border-radius:6px;
+        color: rgb(0, 0, 0);
+        font: 14pt "微软雅黑";
+        background-color: rgb(255, 255, 255);
+}
+
+QToolButton#tBtn_search{
+    border: none;
+}
+
+QGroupBox#groupBox{
+    border-radius:7px;
+    border: 2px solid #0000EE;
+    border-radius: 6px;
+    margin-top: 1ex;
+    font-family:仿宋;
+    font:blod 14px;
+}
+
+QToolButton#tBtn_miniMum{
+    border: none;
+}
+
+QToolButton#tBtn_close{
+    border:none;
+}
+
+
+
